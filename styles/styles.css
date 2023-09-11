@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: white;
+    background-color: #23263a;
+}
+
+/*the homepage start here*/
+header{
+    background-color: #1f2235;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px; 
+    position: fixed;  
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.ullist{
+    display: flex;
+    gap: 30px;
+}
+.navmenu li{
+    font-size: 20px;
+}
+
+.navmenu{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.logo{
+    width: 120px;
+}
+
+.navmenu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navmenu li a:hover{
+    color:#FF4A57;
+    transition:1s ;
+}
+
+.media ul{
+    color:white;
+    display: flex;
+    gap: 20px; 
+    list-style: none;  
+}
+
+.media ul li{
+    border: 2px solid #FF4A57;
+    border-radius: 46%;
+    background:#1f2235 ;
+    font-size: 20px;
+    padding:10px 12px;
+}
+
+.media ul li:hover{
+    background-color: #FF4A57;
+}
+
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.textcontent{
+    margin-top: 300px;
+    display: flex;
+}
+
+.textarea h1{
+    font-size: 60px;
+    margin-top: 35px;
+}
+
+.textarea p{
+    font-size: 23px;
+    width: 550px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.picture{
+    height: 650px;
+    margin-top: 200px;
+}
+
+.btn button{
+    padding:15px 40px;
+    border:2px solid #FF4A57;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;  
+}
+
+#portfolio{
+    background-color: #1f2235;
+    margin-right: 20px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+#portfolio:hover{
+    background-color: #FF4A57;
+}
+
+#play{
+    background-color: #FF4A57;     
+}
+
+/*home section ends here */
+
+/*service section start here */
+.serviceintro{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.service{
+    background-color: #1f2235;
+    padding-bottom: 100px;
+    padding-top: 120px;
+}
+
+.service h4{
+    margin-bottom: 10px;
+    color: #FF4A57;
+}
+
+.service h2{
+    margin-bottom:10px ;
+    font-size: 60px;
+}
+
+.servicebody{
+    font-size: 15px;
+    color: white;
+}
+
+.upbody{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 30px;
+    margin-bottom:30px ;
+    margin-right: 50px;
+}
+
+.serviced{
+    padding: 60px 60px 60px 30px;  
+    width: 350px;
+    background-color: #23263A ;
+    border-radius: 20px;
+    color: #FF4A57;
+}
+
+.lowbody{
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.service h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20PX;
+    color: #fff;
+}
+
+.service p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.serviced i {
+    font-size: 50px;
+    /* color: #FF4A57; */
+}
+
+.serviced:hover {
+    background-color: #FF4A57 ;
+    color:white !important;
+}
+
+/*service section ends here */
+
+/*about section starts here*/
+.aboutme{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-left: 110px;
+    padding-right: 50px;
+}
+
+.abouthead{
+    text-align: center;
+}
+.abouthead h2{
+    font-size: 60px;
+}
+.abouthead p{
+    line-height: 2rem;
+}
+
+.aboutbody{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.abouttext{
+    width:700px
+}
+.abouttext h3{
+    font-size: 30px;
+}
+.aboutinfo{
+    display:flex ;
+}
+.aboutinfo h4{
+    color: #FF4A57;
+}
+
+.about1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 200px;
+    
+}
+
+.about2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+    margin-top: 40px;   
+}
+/*about section ends here */
+
+/*the skill section start here*/
+.container{
+    width: 50%;
+}
+
+.skill-box{
+    margin-bottom: 30px;
+}
+.skill-bar{
+    height: 5px;
+    width: 100%;
+    background-color: #23263A;
+    margin-top: 10px;
+}
+.skill-per{ 
+    display: block;
+    height: 100%;
+    width: 88%;
+    background-color: #FF4A57;
+    position: relative;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.Python{
+    width: 81%;
+}
+
+.skill-per.Laravel{
+    width: 70%;
+}
+
+.skill-per.SEO{
+    width: 90%;
+}
+
+@keyframes progress{
+    0%{
+        width:0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.tooltip{
+    right:0%;
+    position: relative;
+    padding: 4px 12px;
+    top: -38px;
+    z-index: 1;
+    border: 2px white solid;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #1f2235;
+}
+.tooltip::before{
+    content:"" ;
+    height: 6px;
+    width: 13px;
+    left: 50%;
+    z-index: -1;
+    bottom: -3px;
+    position: absolute;
+    background-color:white;
+    transform: translateX(-50%) rotate(45deg);
+}
+#node-js .tooltip{
+    right: -90%;
+}
+#python .tooltip{
+    right: -90%;
+}
+#laravel .tooltip{
+    right: -90%;
+}
+#seo .tooltip{
+    right: -90%;
+}
+
+
+.skilled{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    background-color: #1f2235;
+}
+.skilltext{
+    width: 500px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.skilltext h2{
+    font-size: 60px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.skilltext p{
+    line-height: 2rem;
+}
+.skilltext h3{
+    color: #FF4A57;
+}
+
+.skilltext button{
+    border: 2px solid #FF4A57;
+    border-radius: 40px;
+    padding: 20px 50px;
+    background-color: transparent;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.skilltext button:hover{
+    background-color: #FF4A57;
+}
+/*the skills section ends here*/
+
+.portfolio{
+    padding-right: 50px;
+    padding-left: 70px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.porttext{
+    text-align: center;
+}
+.porttext h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.porttext p{
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+.portlist{
+    display: inline-flex;
+    align-content: center;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+
+
+
+
+
